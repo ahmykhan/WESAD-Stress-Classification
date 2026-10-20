@@ -60,7 +60,7 @@ Each subject's `.pkl` file contains synchronized signals plus a label stream:
 
 - [x] **Phase 1:** Dataset exploration and signal inspection
 - [x] **Phase 2:** Preprocessing, windowing, and feature extraction
-- [ ] **Phase 3:** Model training (baseline classifiers)
+- [x] **Phase 3:** Model training (baseline classifiers)
 - [ ] **Phase 4:** Evaluation, comparison, and analysis
 - [ ] **Phase 5:** Extension to affective states (amusement, meditation) and wrist-sensor signals
 
@@ -69,6 +69,7 @@ Each subject's `.pkl` file contains synchronized signals plus a label stream:
 ```
 .
 ├── AI_project.ipynb     # Main notebook (Phases 1 and 2)
+├── Doc/
 ├── Data/                # Processed data (placeholder)
 ├── rawdata/             # Place raw WESAD files here (placeholder)
 └── README.md
