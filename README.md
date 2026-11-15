@@ -196,39 +196,7 @@ Once continuous $700\text{ Hz}$ streams are compressed into $8$ summary statisti
 
 ---
 
-## Repository Structure
 
-```text
-+-- README.md
-+-- .gitignore
-+-- WESAD_ML_Ready_Features.csv              # Preprocessed 5,504-window master feature matrix
-+-- Phase_2_Data_Preprocessing.ipynb         # Batch .pkl ingestion, label filtering & 5s windowing
-+-- F26-02_Phase3.py                         # Leak-free Random Forest & PyTorch 1D-CNN training
-+-- Phase4_Evaluation.ipynb                  # 15-fold LOSO, group holdout, ablation & bias audit
-+-- F26-02.py                                # Phase 5 reproducible analysis & 60s calibration script
-+-- phase4_outputs/
-|   +-- main_results.csv                     # Cross-protocol benchmark summary table
-|   +-- loso_summary.csv                     # Aggregated mean/std metrics across 15 LOSO folds
-|   +-- loso_per_subject.csv                 # Granular per-subject uncalibrated LOSO metrics
-|   +-- loso_per_subject_normalised.csv      # Granular per-subject Z-normalized LOSO metrics
-|   +-- ablation_loso_rf.csv                 # Modality ablation results (ECG+EDA vs ECG vs EDA)
-|   +-- class_balance_per_subject.csv        # Per-subject window counts and target ratios
-|   +-- confusion_loso.png                   # Pooled LOSO confusion matrices (RF, CNN, LR)
-|   +-- per_subject_acc.png                  # Subject-by-subject accuracy bar comparison
-|   +-- roc_pr_loso.png                      # Pooled LOSO ROC and Precision-Recall curves
-+-- phase5_outputs/
-|   +-- phase5_reproducibility_summary.csv   # Uncalibrated vs. 60s online calibration results
-|   +-- Fig1_InterSubject_EDA_Shift.png      # Boxplot of tonic EDA shift across all 15 subjects
-|   +-- Fig2_Feature_Importance_Theory.png   # Mean Gini feature importance across 15 LOSO folds
-|   +-- Fig3_Calibration_Recovery.png        # Per-subject accuracy recovery with 60s calibration
-+-- reports/
-    +-- F26-02_Phase2.pdf                    # Phase 2 Data Acquisition & EDA Report
-    +-- F26-02_Phase3.tex                    # Phase 3 Implementation & Execution LaTeX Report
-    +-- F26-02_Phase4.pdf                    # Phase 4 Evaluation & Bias Audit Report
-    +-- F26-02_Phase5.tex                    # Phase 5 Output, Error Analysis & Theory LaTeX Report
-```
-
----
 
 ## Quickstart & Reproducibility
 
